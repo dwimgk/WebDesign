@@ -1,0 +1,57 @@
+body
+{
+    background-color: gray;
+    color: blue;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: darkblue;
+}
+a
+{
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    /* za underline etc. ^ */
+    color: red;
+}
+nav
+{
+    text-align: center;
+}
+.more
+/* zadadeno e class v traita na nqkoi itemi ^ */
+{
+    background-color: yellow;
+    color: green;
+}
+p, h2
+/* za vichki p i vsichki h2 */
+{
+    color: lightblue;
+}
+h2
+{
+    font-size: 30px;
+}
+p
+{
+    text-align: justify;
+    font-size: 18px;
+}
+footer p
+/* vsichki p vuv footer */
+{
+    text-align: center;
+    font-style: italic;
+}
+img
+{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-left: 8px;
+}
