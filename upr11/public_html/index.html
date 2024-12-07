@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let t1 = "Здравейте,";
+            let t2 = " добре дошли в моята";
+            let t3 = " Javascript страница";
+            let n1 = 10;
+            let Text4 = "5";
+            let n2;
+            let Bool1 = true;
+            let Text = "4.5+5.5";
+
+            document.write("<h1>" + t1.concat(t2, t3) + "</h1>");
+
+            document.write("<br/>");
+            document.write("<t1: >" + typeof (t1));
+            document.write("<br/>");
+            document.write("<t2: >" + typeof (t2));
+            document.write("<br/>");
+            document.write("<t3: >" + typeof (t3));
+            document.write("<br/>");
+            document.write("<n1: >" + typeof (n1));
+            document.write("<br/>");
+            document.write("<Text4: >" + typeof (Text4));
+            document.write("<br/>");
+            document.write("<n2: >" + typeof (n2));
+            document.write("<br/>");
+            document.write("<Bool1: >" + typeof (Bool1));
+            document.write("<br/>");
+            document.write("<Text: >" + typeof (Text));
+
+            let t4 = t1.concat(t2, t3);
+            document.write("<br/>");
+            document.write(t4.replace("Javascript", "HTML"));
+            document.write("<br/>");
+
+            n2 = 20.5;
+            document.write(n1 + n2);
+            document.write("<br/>");
+            document.write(n2 + parseInt(Text4));
+            document.write("<br/>");
+            document.write(eval(Text));
+
+            let imena = prompt("Как се казвате?");
+            let egn = prompt("Какв е вашето ЕГН?");
+            document.write("<br/>");
+            document.write("Вашите имена са " + imena);
+            let godina = egn.substr(0, 2);
+            let mesec = egn.substr(2, 2) - 40;
+            let den = egn.substr(4, 2);
+            document.write("Вие сте родени на : " + den + "." + mesec + "." + godina + "г.");
+
+            function fun() {
+                let price = prompt("Колко пари?");
+                document.getElementById("result").innerHTML = "Цената е: " + price + "и с ДДС е: " + price * 1.2;
+            }
+
+        document.write("<br/>");
+        let otbor=prompt("Любимият Ви отбор е?");
+        if(otbor ==="ЦСКА")
+        {
+            document.write("И преди, и сега ЦСКА на върха!");
+        }
+        else if(otbor==="Левски")
+        {
+            document.write("Левски, Оле!");
+        }
+        else if(otbor==="Лудогорец")
+        {
+            document.write("Моци, Моцииии!");
+        }
+        else
+        {
+            document.write("Изберете истински отбор!");
+        }
+        
+        </script>
+        <br/>
+        <span id="result"></span>
+        <button onclick="fun()">Click me!</button>
+    </body>
+</html>

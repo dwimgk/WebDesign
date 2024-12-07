@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let d = new Date();
+            let den = d.getDate();
+            let mesec = d.getMonth() + 1;
+            let godina = d.getFullYear();
+            document.write(den + "." + mesec + "." + godina + " г.");
+
+            let chas = d.getHours();
+            let minuti = d.getMinutes();
+            let sekundi = d.getSeconds();
+            document.write("</br>" + chas + ":" + minuti + ":" + sekundi + "</br>");
+
+            let chislo = prompt("Въведете число!");
+            if (chislo < 0)
+            {
+                document.write("Числото е отрицателно!");
+            } else if (chislo > 0)
+            {
+                document.write("Числото е положително!");
+            } else
+            {
+                document.write("Числото е кръгла НУЛА!");
+            }
+            document.write("</br>" + Math.pow(chislo, 2));
+            document.write("</br>" + Math.round(chislo));
+
+
+            function fun()
+            {
+                let cena = prompt("Въведи цена");
+                let godini = prompt("Въведи години!");
+                let hrana = confirm("Ще ядете ли?");
+                let final_cena = 0;
+
+                if (godina < 19 || godina > 60)
+                {
+                    final_cena = cena * 0.7;
+                } else
+                {
+                    final_cena = cena;
+                }
+                if (hrana == 1)
+                {
+                    final_cena += 5;
+                }
+                document.write("Final price: " + final_cena);
+            }
+
+
+
+
+
+            let M1 = new Array("Алек", "Пламен", "Симеон", "Надежда");
+            let M2 = new Array("Веселина", "Георги", "Ивана", "Атанас");
+            document.write("</br>");
+            document.write(M1);
+            document.write("</br>");
+            document.write(M2);
+
+            let M3 = M1.concat(M2);
+            document.write("</br>");
+            document.write(M3);
+
+            M3.push("Асен");
+            document.write("</br>");
+            document.write(M3);
+
+            M3.shift();
+            document.write("</br>");
+            document.write(M3);
+            M3.pop();
+            document.write("</br>");
+            document.write(M3);
+
+            document.write("</br>");
+            document.write(M3[3]);
+
+            document.write("</br>");
+            document.write(M3.sort());
+            document.write("</br>");
+            document.write(M3.length);
+
+            let chisloto = prompt("Въведи четно число!");
+            if (chisloto % 2 === 0)
+            {
+                for (let i = chisloto; i >= 2; i -= 2)
+                {
+                    document.write("<br/>"+i+" ^ 2 = "+Math.pow(i,2));
+                }
+            } else
+            {
+                document.write("Върни се в 3-ти клас!");
+            }
+        </script>
+        <br/>
+        <button onclick="fun()">Click me</button>
+
+    </body>
+</html>
