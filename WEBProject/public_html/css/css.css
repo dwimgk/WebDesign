@@ -1,0 +1,140 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 14, 2024, 10:26:33 PM
+    Author     : pcmoi
+*/
+
+/*initialization of the font and box alignment*/
+* {
+    box-sizing: border-box;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*background img and formatting*/
+body {
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: 110%;
+    margin: auto;
+    width:80%;
+    background-color: Rgba(1,2,100,0.1);
+
+}
+/* Style the main menu */
+div.main_menu{
+    background-color: rgba(255,255,255,0.1);
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5VW;
+}
+.logo{
+    width: 50%;
+    height: auto;
+    max-width:130px;
+    float:left;
+    transition: 0.1s;
+}
+.logo:hover{
+    width: 50vw;
+}
+
+h1{
+    padding-left: 60px;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    transition: 0.1s;
+}
+h1:hover{
+    color:darkslateblue;
+}
+.stars{
+    width: 50%;
+    height: auto;
+    float:left;
+    padding-top: 35px;
+    transition: 0.1s;
+}
+.stars:hover{
+    width: 10vw;
+}
+.content {
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    line-height: 1.6;
+    border: 1px solid green;
+    border-radius: 25px;
+    float: left;
+
+}
+.slogan{
+    text-align:center;
+    color: darkblue;
+    font-size: 1.5VW;
+}
+/*formatting the footer*/
+.footer_center{
+    padding-left: 350px;
+    background-color: rgba(0,0,0,0.5);
+}
+h4{
+    padding-top: 15px;
+}
+.contact_img{
+    width: 5%;
+    height: auto;
+    float: left;
+    padding-top: 30px;
+}
+
+[class*="col-"] {
+    float: left;
+    /*padding: 15px;
+    border: 1px solid red;*/
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}

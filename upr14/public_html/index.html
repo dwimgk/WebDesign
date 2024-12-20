@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="mishka">сложи мишката върху мен</p>
+        <div class="clickMe">Натисни тук!</div>
+        <button id="button">Click me</button>
+        <br/>
+        <img src="christmas.gif" alt=""/>
+        <img src="new_year.gif" alt=""/>
+
+        <p id="podaruk">Весела Коледа И Честита Нова Година!</p>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                console.log("Ready");
+
+                $("#mishka").mouseenter(function () {
+                    $("#mishka").css("color", "red");
+                });
+                $("#mishka").mouseout(function () {
+                    $("#mishka").css("color", "black");
+                });
+
+                $(".clickMe").mousedown(function () {
+                    $(".clickMe").css("background-color", "purple");
+                    $(".clickMe").css("color", "white");
+                });
+                $(".clickMe").mouseup(function () {
+                    $(".clickMe").css("background-color", "lightblue");
+                    $(".clickMe").css("color", "blue");
+                });
+
+                function randomRGB() {
+                    var r = Math.floor(Math.random() * 256);
+                    var g = Math.floor(Math.random() * 256);
+                    var b = Math.floor(Math.random() * 256);
+                    return "rgb(" + r + "," + g + "," + b + ")";
+                }
+
+                function colorizeText() {
+                    var text = $("#podaruk").text();
+                    var coloredText = "";
+
+                    for (var i = 0; i < text.length; i++) {
+                        var char = text.charAt(i);
+                        if (char !== ' ') {
+                            coloredText += '<span class="colored-letter">' + char + '</span>';
+                        } else {
+                            coloredText += char;
+                        }
+                    }
+                    $("#podaruk").html(coloredText);
+                }
+
+                function changeColors() {
+                    $(".colored-letter").each(function () {
+                        $(this).css("color", randomRGB());
+                    });
+                }
+
+                $("#button").on("click", function () {
+                    $("img").fadeToggle(1500);
+                    $("#podaruk").animate({"font-size": "14px"}, 1000, function () {});
+                    $("#podaruk").animate({"font-size": "34px"}, 2500, function () {});
+                    $("#podaruk").animate({"font-size": "55px"}, 300, function () {});
+                    $("#podaruk").animate({"font-size": "12px"}, 2500, function () {});
+                    $("#podaruk").animate({"font-size": "35px"}, 5000, function () {});
+
+                    colorizeText();
+                    setInterval(changeColors, 500);
+                });
+            });
+        </script>
+
+    </body>
+</html>

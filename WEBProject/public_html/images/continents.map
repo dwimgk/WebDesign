@@ -1,0 +1,16 @@
+<img src="[continents] (exported)" width="1000" height="500" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:pcmoi -->
+<area shape="poly" coords="30,37,15,93,131,120,180,195,258,242,285,212,296,167,356,136,403,79,478,20,188,6,101,21" href="https://en.wikipedia.org/wiki/North_America" />
+<area shape="poly" coords="262,249,300,202,303,185,423,269,341,408,272,402" href="https://en.wikipedia.org/wiki/South_America" />
+<area shape="poly" coords="443,52,422,80,467,153,515,143,558,149,585,133,606,121,636,129,677,59,698,27,608,42,559,14" href="https://en.wikipedia.org/wiki/Europe" />
+<area shape="poly" coords="573,147,605,126,637,137,694,41,767,17,929,29,996,52,997,90,875,167,851,193,937,278,927,296,896,274,815,287,759,244,762,213,740,203,733,241,690,198,623,216,594,164" href="https://en.wikipedia.org/wiki/Asia" />
+<area shape="poly" coords="475,156,447,186,458,243,508,245,541,348,597,354,640,318,649,279,621,281,644,220,619,220,572,153,514,150" href="https://en.wikipedia.org/wiki/Africa" />
+<area shape="poly" coords="802,302,874,279,901,286,949,330,999,350,995,380,861,382,797,354" href="https://en.wikipedia.org/wiki/Australia_(continent)" />
+<area shape="poly" coords="996,419,996,496,13,498,5,426" href="https://en.wikipedia.org/wiki/Antarctica" />
+</map>
