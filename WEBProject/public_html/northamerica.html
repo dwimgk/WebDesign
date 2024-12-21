@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>Северна Америка</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/blue_heron.ico">
@@ -13,17 +9,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function fun4() {
+                document.getElementById("button").style.color = "red";
+            }
+            function fun5() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
         <header>
             <div class="main_menu">
                 <div class="col-3">
-                    <a href="index.html">
-                        <img class="logo" src="images/logo.png"  alt="crow logo" >
-                    </a>
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
                 </div>
                 <div class="col-6">
-                    <h1>
+                    <h1 onclick="home()">
                         Птиците по света
                     </h1>
                 </div>
@@ -34,31 +53,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <br/>
             <br/>
         </header>
+        <nav>
+            <ul>
+                <li onclick="home()">Начало</li>
+                <li onclick="redirect()">Карта</li>
+            </ul>
+        </nav>
 
         <div class="content">
-            <p class="center">
-                bird                
+            <p class="slogan">
+                bird
             </p>
         </div>
-
-
         <footer>
-            <br/>
-            <br/>
-            <br/>
             <div class="footer_center">
                 <a href="">
-                    <div>
-                        <img class="contact_img" src="images/contacts.png"  alt="contacts" >
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
                     </div>
-                    <div class="col-6">
-                        <h4>
-                            За контакти, моля натиснете тук !
-                        </h4>
-                    </div>
-
                 </a>
             </div>
         </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

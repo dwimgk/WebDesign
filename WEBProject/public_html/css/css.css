@@ -68,6 +68,24 @@ h1:hover{
 .stars:hover{
     width: 10vw;
 }
+ul {
+    border-radius: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: rgba(0, 139, 139, 0.5);
+}
+
+li {
+    padding:5px;
+    border-radius: 25px;
+    background-color: rgba(255, 165, 0, 0.6);
+    float: left;
+    margin-right: 10px;
+    color: black;
+}
+
 .content {
     background-color: rgba(255,255,255,0.5);
     padding: 10px;
@@ -75,26 +93,51 @@ h1:hover{
     border: 1px solid green;
     border-radius: 25px;
     float: left;
-
+    width: 100%;
+    margin-bottom: 20px;
+}
+.slider{
+    margin-left: 178px;
+    background-color: rgba(155,155,155,0.5);
+    padding: 10px;
+    border-radius: 50px;
+    height:600px;
 }
 .slogan{
+    margin-left: 100px;
     text-align:center;
     color: darkblue;
     font-size: 1.5VW;
+    width: 80%;
 }
 /*formatting the footer*/
-.footer_center{
-    padding-left: 350px;
-    background-color: rgba(0,0,0,0.5);
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    bottom: 0;
+    width: 100%;
 }
-h4{
-    padding-top: 15px;
+
+.footer_center {
+    display: flex; /* arranging side-by-side */
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
-.contact_img{
-    width: 5%;
+
+.contact_img {
+    max-width: 40px;
     height: auto;
-    float: left;
-    padding-top: 30px;
+}
+
+h4 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 [class*="col-"] {
