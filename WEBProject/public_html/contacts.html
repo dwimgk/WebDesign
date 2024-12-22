@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Светът на приците</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
+    </head>
+    <body>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function next() {
+                document.getElementsByClassName("bx-next")[0].click();
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function fun5() {
+                document.getElementById("button").style.color = "black";
+            }
+            setInterval(next, 2000);
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="contacts">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="bulgaria">България</option>
+                            <option value="canada">Канада</option>
+                            <option value="usa">САЩ</option>
+                            <option value="germany">Германия</option>
+                            <option value="france">Франция</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <address>
+                гр. Варна<br>
+                ул. "Цар Асен" 74<br>
+                тел.: +359 89 651 2533<br>
+                E-mail: 14124115@naval-acad.bg
+            </address>
+        
+    </div>
+    <footer>
+        <div class="footer_center">
+            <a href="contacts.html">
+                <div class="footer_content">
+                    <img class="contact_img" src="images/contacts.png" alt="contacts">
+                    <h4>За контакти, моля натиснете тук!</h4>
+                </div>
+            </a>
+        </div>
+    </footer>
+    <br/><br/><br/><br/><br/><br/>
+</body>
+</html>

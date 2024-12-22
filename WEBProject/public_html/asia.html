@@ -1,15 +1,177 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Азия
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/peacock.jpg" data-lightbox="example-set"><img class="example-image" src="images/peacock.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Индийски паун
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Видът е широко разпространен в Пакистан, Индия и Шри Ланка на надморска височина до 2000 m. Ареалът му на местообитание обхваща районите южно и източно от река Инд, в Джаму и Кашмир, източен Асам, южен Мизорам и целия Индийски полуостров. Обитава както джунгли и горски местности, така и обработваеми земи в близост до селищата.
+
+                        Макар че е пренесен доста рано в Средиземноморието, широко разпространение в Европа намира едва след походите на Александър Велики в Индия. Одомашняването му е спомогнало видът да се разпространи във всички части на света.                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Ориенталски рогач
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/oriental.jpg" data-lightbox="example-set"><img class="example-image" src="images/oriental.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Ориенталският рогач, известен също като Бялоклюн рогач, е вид птица от семейство Рогачови, характерен за тропическите гори на Южна и Югоизточна Азия. Ориенталският рогач е важен за разпространението на семената на тропическите дървета, особено на смокините. Роговият израстък ("каската") на рогачите не служи за защита, а се смята, че играе роля в усилването на техния глас или като символ на статус.
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/crane.jpg" data-lightbox="example-set"><img class="example-image" src="images/crane.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Японски жерав  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        В Китай жеравът, известен още като чапла и винаги е бил един от най-благоприятните символи от древни времена. Той е символ на благородство и дълъг живот. В допълнение, също представлява вечна любов и лоялност в романтиката. По време на периода на императорската династия върху официалните одежди се използват изображения на жерави, за да се посочи техния ранг.В японската култура жеравът, известен още като „птицата на щастието“ е символ на дълголетие, вярност, мир и също се смята, че има лечебна сила.
+
+                        Японците вярвали, че сгъването на хиляда хартиени жерави за пациент, страдащ от заболяване, може да помогне за възстановяването му. В допълнение, жеравът е и един от най-популярните обекти за късмет в Япония, за който се твърди, че носи късмет на собственика.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Хималайски монал
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/monal.jpg" data-lightbox="example-set"><img class="example-image" src="images/monal.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Птицата е относително голяма на фона на останалите представители на семейство Фазанови. Дълга е около 70 cm, теглото на мъжките и женските варира съответно в диапазоните 1980 - 2380 g и 1800 - 2150 g. Възрастните мъжки имат дълъг гребен и по цялото тяло имат разноцветно оперение, докато оперението на женските е еднообразно, в горната част на торса в тъмно кафяво до черно. Гребенът при мъжките е дълъг и металически зелен, перата на гърба и от двете страни на врата им е в различни нюанси на медночервеното, долната част на тялото им е в отчетливо бяло, което се вижда при полет. Перата на опашката на мъжкия са равномерно червеникави, като потъмняват към краищата, докато перата в основата на опашката на женската са бели с черни и червеникави ивици. Женските имат ярко бяло петно на гушката и бяла ивица на опашката. През първата си година, още незрели, мъжките наподобяват външно на женските, но са по-големи на размери и с по-слабо отличително оперение.    
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/svircho.jpg" data-lightbox="example-set"><img class="example-image" src="images/svircho.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Синя свирчовка
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Синята свирчовка, известна също като Голям син дрозд, е красива пойна птица от семейство Мухоловкови.Дължина около 33 см – сравнително голяма птица за семейството. Синята свирчовка често е вдъхновение за поети и художници в Азия, заради ярките си цветове и мелодична песен.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

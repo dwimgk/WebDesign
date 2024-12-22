@@ -1,15 +1,180 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Африка
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/kitoglav.jpg" data-lightbox="example-set"><img class="example-image" src="images/kitoglav.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Китоглав
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Китоглавата чапла е много голяма птица. На височина достига до 1,2 m, размахът на крилете е 2,3 – 2,6 m, а теглото ѝ варира от 4 до 7 kg. Клюнът на чаплата прилича на дървен черпак и я прави изкусен ловец на риба. Това обаче води до тясна специализация в лова и ако плячката, с която чаплата се храни, намалее, се създава реална опасност от смърт на птицата. За разлика от повечето птици очите са разположени в предната част на черепа и определят бинокулярното ѝ зрение. По време на почивка птицата полага тежкия си клюн на гърдите си.        
+                    </td>                        
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Лилавогърба валдшнепка
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/roller.jpg" data-lightbox="example-set"><img class="example-image" src="images/roller.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Лилавогърбата валдшнепка, известна също като Лилавогърба корелата или Лилавогърбен корел, е птица от семейство валдшнепки, която е широко разпространена в Африка на юг от Сахара. Това е цветна и привлекателна птица с ярки окраски и интересни поведенчески характеристики. Обитава разнообразни места, включително открити савани, гористи и полустепни райони, като предпочита площи с редки храсти и дървета. Често я срещат и в райони с човешка активност, като ферми. Поради ярката си окраска и акробатични полети, лилавогърбата валдшнепка е популярна в някои региони и като декоративна птица.
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/sekretarka.jpg" data-lightbox="example-set"><img class="example-image" src="images/sekretarka.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Секретарка
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Секретарката е уникална и впечатляваща птица, която е известна със своето изключително поведение и адаптация към различни местообитания в Африка. Тя е голям хищник, част от семейство Sagittariidae, и е известна със своето умение да ловува змии и други опасни животни. Името "секретарка" произлиза от характерните дълги пера на врата й, които наподобяват перата на шапка, носена от секретарите в миналото.
+
+                        Секретарката е невероятно атрактивна и изключително ефективна хищна птица, която е адаптирана към тежките условия на африканските савани. Тя е невероятен ловец и наблюдател на тези диви земи.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Сива коронована жерав
+
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/greycrane.jpg" data-lightbox="example-set"><img class="example-image" src="images/greycrane.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Сивата коронована жерав е вид жерав, който е разпространен в субсахарска Африка. Тази красива и изящна птица е известна със своето уникално оперение и красивата си "корона" от пера на главата. Сивата коронована жерав е символ на дивата природа и е също така свързана с различни културни традиции и вярвания. Сивата коронована жерав е известна със своята елегантна външност и често се среща в различни култури като символ на красота и сила. Корона от жълти пера на главата й придава много специален вид, който я прави лесно разпознаваема сред други видове птици.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/kingfisher.jpg" data-lightbox="example-set"><img class="example-image" src="images/kingfisher.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Африкански джуджевиден риболовец 
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Африканският джуджевиден риболовец е малка, ярко оцветена птица от семейство Alcedinidae, която обитава тропическите и субтропическите райони на Африка. Този вид е известен със своето атрактивно оперение и изключителни умения да лови риба. Тази птица е известна със своите ярки цветове, които я правят лесно разпознаваема сред другите риболовци. Неговата стратегия за ловене на риба, включваща бързо потапяне във водата, е не само ефективна, но и зрелищна за наблюдение.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

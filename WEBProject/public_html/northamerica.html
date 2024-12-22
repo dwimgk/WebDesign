@@ -14,6 +14,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
 
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+
         <script>
             $(document).ready(function () {
                 $(".slider").bxSlider();
@@ -29,10 +33,13 @@
             function home() {
                 window.location.href = "index.html";
             }
-            function fun4() {
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
                 document.getElementById("button").style.color = "red";
             }
-            function fun5() {
+            function black() {
                 document.getElementById("button").style.color = "black";
             }
         </script>
@@ -55,19 +62,108 @@
         </header>
         <nav>
             <ul>
-                <li onclick="home()">Начало</li>
-                <li onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
             </ul>
         </nav>
 
         <div class="content">
             <p class="slogan">
-                bird
+                Северна Америка
             </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/baldeagle.jpg" data-lightbox="example-set"><img class="example-image" src="images/baldeagle.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Белоглав Орел
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Белоглавият орел е сравнително голяма птица, с дължина на тялото от 71 до 106 cm, размах на крилете 168 – 244 cm и маса от 3 до 7 kg. Живее около 30 години. Гнездото, в което се излюпват малките, е с размери 4 на 2,5 m и тежи един тон. През 1973 година е класифициран като застрашен от изчезване вид в САЩ, но благодарение на положените грижи, на 28 юни 2007 година е премахнат от списъка на застрашените видове.                
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Северен Кардинал
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/cardinal.png" data-lightbox="example-set"><img class="example-image" src="images/cardinal.png" width="300"  alt="bird"/></a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Северният кардинал е вид птица от семейство кардиналови, която е известна със своята ярка червена окраска (при мъжките) и мелодичен песенен глас. Често се срещат близо до човешки обитания и могат да бъдат привлечени от хранилки. Хранят се с плодове, семена и насекоми. Северният кардинал е официалната птица на няколко щата в САЩ, включително Илинойс, Индиана, Кентъки и Вирджиния.                
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/condor.jpg" data-lightbox="example-set"><img class="example-image" src="images/condor.jpg" width="300"  alt="bird"/></a>
+
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Калифорнийски кондор
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Калифорнийският кондор е най-голямата птица в Северна Америка и една от най-големите птици изобщо. Фосилната летопис на вида сочи, че преди около 50 000 години, калифорнийският кондор се е срещал из обширни територии на цяла Северна Америка. Като вид е възникнал преди около 200 000 години.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Снежна сова
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/snowowl.jpg" data-lightbox="example-set"><img class="example-image" src="images/snowowl.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        С жълтите си очи, черен клюн и бяло оперение снежната сова е лесно разпознаваема. Дълга е 52 – 71 cm с размах на крилете от 125 – 150 cm. Може да тежи от 1,6 до 3 kg.[3] Полярната сова е един от най-големите видове в рода и в Северна Америка е средно най-тежкият вид сова.Този вид сови гнездят на земята, като си построяват гнездо върху могили и големи скални блокове. Избират места с добра видимост, непосредствен достъп до ловни територии и без сняг, могат да използват наноси от чакъл и изоставени орлови гнезда.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/hummingbird.jpg" data-lightbox="example-set"><img class="example-image" src="images/hummingbird.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Рубиненогушо колибри
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Рубиненогушите колибрита са вид дребни птици от семейство Колиброви. Разпространени са в големи части от Северна и Централна Америка и са единственият вид колибри, срещащ се редовно на изток от река Мисисипи. Достига 7 до 9 cm дължина, 8 – 11 cm размах на крилете и маса 8 до 11 g. Наименованието на вида се дължи на характерното яркочервено оцветяване на гърлото при мъжките.
+                    </td>
+                </tr>
+            </table>
         </div>
         <footer>
             <div class="footer_center">
-                <a href="">
+                <a href="contacts.html">
                     <div class="footer_content">
                         <img class="contact_img" src="images/contacts.png" alt="contacts">
                         <h4>За контакти, моля натиснете тук!</h4>

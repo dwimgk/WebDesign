@@ -1,15 +1,177 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Антарктида
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/emperor.jpg" data-lightbox="example-set"><img class="example-image" src="images/emperor.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Императорски пингвин 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Императорски пингвин е най-големият вид пингвин и една от най-забележителните птици, които обитават Антарктида. Императорските пингвини се хранят основно с риба, калмари и други морски същества. Те ловуват под водата и могат да се гмуркат на дълбочина до 500 метра, като остават под водата до 20 минути. Императорският пингвин е не само интересен поради своята физика и поведение, но и важен индикатор за здравето на околната среда в Антарктика.
+                    </td>                        
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Аделиев пингвин
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/adeliev.jpg" data-lightbox="example-set"><img class="example-image" src="images/adeliev.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Аделиев пингвин е един от най-разпространените видове пингвини в Антарктида. Той е малък и много социален, и е известен със своето уникално поведение и адаптации към суровите условия на ледовете в региона. Аделиевите пингвини са изключително социални и живеят в големи колонии, които могат да набират хиляди индивиди. Тези колонии се събират по време на размножаване, когато пингвините се събират в огромни тълпи на ледовете.                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/skua.jpg" data-lightbox="example-set"><img class="example-image" src="images/skua.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Южен полярен скуа 
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Южен полярен скуа е голяма морска птица, която обитава Антарктика и субантарктическите острови. Той е известен със своето агресивно поведение и предпочита да се храни чрез плячкосване, като отнема храна от други птици, включително пингвини и морски птици. Понякога се нарича „крадец на небето“ заради агресивното си поведение, когато отнема храна от други птици.
+                        Южният полярен скуа е един от малкото видове, които се намират в почти всяка част на Антарктида по време на размножителния сезон.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Снежен буревестник
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/burevest.jpg" data-lightbox="example-set"><img class="example-image" src="images/burevest.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Снежен буревестник е вид морска птица, която обитава Антарктика и прилежащите й острови. Той е известен със своето изключително издържливо поведение в суровите условия на региона, както и със своето уникално местообитание и начин на живот. Снежният буревестник е известен със своето упорито поведение и неуморни полети в сурови климатични условия.
+                        Понякога се нарича „морски скитник“ заради способността си да прекарва дълги периоди в движение, без да спира да се приземява.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/ribarka.jpg" data-lightbox="example-set"><img class="example-image" src="images/ribarka.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Антарктическа рибарка
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Антарктическа рибарка, известна също като "снежна рибарка", е морска птица, която обитава Антарктида и прилежащите субантарктически острови. Тя е част от семейство Stercorariidae и е тясно свързана с буревестниците и други морски хищници. Антарктическата рибарка е перфектно адаптирана към екстремно студените условия на Антарктика. Тя има специални пера, които осигуряват отлична изолация и защита от суровите ветрове и студ. Антарктическата рибарка е една от малкото птици, които са способни да живеят в такъв суров и студен климат, и е известна със своята силна навигация и дълги миграции.
+                        Тя играе важна роля в антарктическата екосистема, като хищник, който контролира популациите на морски организми.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

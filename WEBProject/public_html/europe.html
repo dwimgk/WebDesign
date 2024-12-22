@@ -1,15 +1,176 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Европа
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/puffin.jpg" data-lightbox="example-set"><img class="example-image" src="images/puffin.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Атлантически тъпоклюн
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Тъпоклюната кайра е птица от семейство Кайрови. Има характерна яркооцветена човка, особено през размножителния период. Има самоуверена и същевременно комична походка, което ѝ придава комичен вид. Крилата на тъпоклюната кайра служат за летене, но са приспособени и като плавници. Ципестите крака се използват при по-бавното придвижване във водата. Над окото има рогово триъгълниче със синкав оттенък, отдолу с черно ръбче. Човката е сплесната странично.    
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Европейска червеношийка
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/rubecula.jpg" data-lightbox="example-set"><img class="example-image" src="images/rubecula.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Червеногръдката е малка, непрелетна за България птица, достигаща дължина от около 14 см. Горната страна на тялото, крилата и опашката са маслинено зеленикавокафяви. Челото, бузите, гърлото и гърдите са ръждивочервени, а коремът – белезникав. Няма полов диморфизъм. Горната страна на тялото при младите екземпляри е кафява с капковидни петна. Гушата и гърдите им са охреноръждиви с вълнообразни тъмни ивици.
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/lilowl.jpg" data-lightbox="example-set"><img class="example-image" src="images/lilowl.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Kукумявка 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Дължина на тялото: 22 cm. Размах на крилете: 56 cm. Има малки възрастови различия. Възрастните отгоре са от жълтеникави до тъмнокафяви със светли петна, дребни и удължени по главата и едри по гърба и крилата, булото на лицето е белезникаво, а отдолу са белезникави до сиво-жълти, с петна. Младите са с пухкаво оперение и слабо изразени петна. От пернатоногата кукумявка се отличава по малката глава, формата на петната по гърба и корема при възрастните и по петната по корема при младите. Често издава крясъци „ку-ку-мяу“, „куку-куку-мяу“.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Брадат лешояд 
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/beardedvult.jpg" data-lightbox="example-set"><img class="example-image" src="images/beardedvult.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Храни се основно с мърша и кости от умрели животни, които вдига във въздуха и пуска от високо, за да се строшат и станат подходящи за храна. Чупи черупката на костенурки по подобен начин преди да ги изяде. Понякога улавя някои по-слабо подвижни и дребни животни.
+
+                        Размахът на крилата достига до 2,5 m, а дължината на тялото – до 1,1 m. Диаметърът на гнездото е до 2 m. В продължение на няколко десетилетия единственият зоопарк в света, където в плен се размножават брадати лешояди е Софийската зоологическа градина. Там от 1916 до 1927 г. една двойка излюпва 11 малки.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/golden.jpg" data-lightbox="example-set"><img class="example-image" src="images/golden.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Златиста булка
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Златистата булка е водолюбива птица от семейство Дъждосвирцови. За оперението е характерен сезонен диморфизъм. Гърбът, крилата отгоре и тилът през всички сезони са на златистожълти и черни петна. През лятото коремът, гърдите, шията и бузите са черни, разделени от останалото оперение с бяла ивица, а през есенно-зимния период са бежово-бели. Извън размножителния период прилича на сребристата булка, като се отличава от нея по липсата на черно петно на подмичничните пера.   
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

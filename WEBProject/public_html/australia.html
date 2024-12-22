@@ -1,15 +1,175 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Aвстралия
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/kukabara.jpg" data-lightbox="example-set"><img class="example-image" src="images/kukabara.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Кукабара 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Кукабара е род птици от семейство Alcedinidae, известен със своите уникални и характерни звуци, които наподобяват смях. Тези птици са широко разпространени в Австралия и части от Нова Гвинея и Източна Индонезия, и са известни със своята привързаност към хабитати, свързани с вода. Един от най-разпознаваемите аспекти на кукабарите е тяхният характерен смях, който звучи много като човешки смях. Този звук е част от комуникацията им и може да се чува на големи разстояния. Смехът често се използва за отбелязване на територия и да изплаши други хищници.
+                    </td>                        
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Супербова лира
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/lira.jpg" data-lightbox="example-set"><img class="example-image" src="images/lira.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Супербова лира  е една от най-забележителните и красиви птици в Австралия. Тази птица е известна със своето невероятно умение за имитация на звуци и мелодии, което я прави уникална в света на птиците. Звукът на супербовата лира е толкова впечатляващ и разнообразен, че тя може да имитира почти всякакви звуци, включително и човешки. Този невероятен вокален репертоар я прави една от най-забележителните птици в света.
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/kasuar.jpg" data-lightbox="example-set"><img class="example-image" src="images/kasuar.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Касуар 
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Касуар е голяма, необичайно изглеждаща и опасна птица, родом от тропическите гори на Нова Гвинея, Австралия и някои околни острови. Касуарите са безполетни птици, които се характеризират със своето впечатляващо изграждане, ярки цветове и мощен вид. Касуарите са едни от най-опасните птици в света. Те могат да достигнат скорости до 50 км/ч и да нанасят силни удари с краката си, които могат да бъдат фатални за хищници или хора, ако се почувстват заплашени.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Дъгова лорикета
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/lori.jpg" data-lightbox="example-set"><img class="example-image" src="images/lori.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Дъгова лорикета, известна още като австралийска дъгова лорикета, е една от най-колоритните и ярки птици в Австралия. Тези птици са обичани заради своята красота и социално поведение. Те са част от семейството Psittacidae, което включва папагалите. Дъговата лорикета е известна със своето ярко оперение и веселия си характер. Понякога те са наричани „птици на усмивките“, благодарение на радостното си поведение и шумни звуци, които издават. Те също така могат да бъдат много игриви, като често играят с други птици или дори с хора.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/lilpeng.jpg" data-lightbox="example-set"><img class="example-image" src="images/lilpeng.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Малък пингвин
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Малък пингвин, известен още като вълшебен пингвин или син пингвин, е най-малкият вид пингвини в света. Тези симпатични и уникални птици обитават южното крайбрежие на Австралия и Нова Зеландия и са известни със своето малко размер и характерно поведение. Малките пингвини често се наричат "вълшебни пингвини" поради своята чаровна външност и забавни поведения, както и факта, че през нощта те могат да създадат впечатление, че се появяват като „пингвини от приказките“, когато се появяват от своите гнезда на брега.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>

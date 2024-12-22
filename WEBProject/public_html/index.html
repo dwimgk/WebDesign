@@ -29,10 +29,16 @@
             function home() {
                 window.location.href = "index.html";
             }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
             function next() {
                 document.getElementsByClassName("bx-next")[0].click();
             }
-            function fun5() {
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
                 document.getElementById("button").style.color = "black";
             }
             setInterval(next, 2000);
@@ -56,8 +62,9 @@
         </header>
         <nav>
             <ul>
-                <li onclick="home()">Начало</li>
-                <li onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
             </ul>
         </nav>
 
@@ -66,7 +73,7 @@
                 Птиците са сред дивите животни, които най-добре са се адаптирали към създадения от човека модерен свят. Те са разпространени навсякъде около нас, както сред природата, така и в големите и малки населени места. Способността им да се приобщават и да живеят в близост до хората е впечатляваща и ги е превърнала в част от ежедневието ни. Толкова сме свикнали с тях, че често не ги забелязваме, но изследване от 2014 година показва, че около 20% от всички видовете птици могат да се видят в градовете по света.                
                 <br/>
                 <br/>
-                <button id="button" onclick="redirect()" onmouseover="fun4()" onmouseout="fun5()">Get started !!!</button>
+                <button id="button" onclick="redirect()" onmouseover="red()" onmouseout="black()">Продължи !!!</button>
             </p>
         </div>
 
@@ -84,7 +91,7 @@
         </div>
         <footer>
             <div class="footer_center">
-                <a href="">
+                <a href="contacts.html">
                     <div class="footer_content">
                         <img class="contact_img" src="images/contacts.png" alt="contacts">
                         <h4>За контакти, моля натиснете тук!</h4>

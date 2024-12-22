@@ -1,15 +1,180 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Светът на приците</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/blue_heron.ico">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+        
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/lightbox.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".slider").bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <script>
+            function redirect() {
+                window.location.href = "mapdir.html";
+            }
+            function home() {
+                window.location.href = "index.html";
+            }
+            function contacts() {
+                window.location.href = "contacts.html";
+            }
+            function red() {
+                document.getElementById("button").style.color = "red";
+            }
+            function black() {
+                document.getElementById("button").style.color = "black";
+            }
+        </script>
+        <header>
+            <div class="main_menu">
+                <div class="col-3">
+                    <img class="logo" onclick="home()" src="images/logo.png"  alt="crow logo" >
+                </div>
+                <div class="col-6">
+                    <h1 onclick="home()">
+                        Птиците по света
+                    </h1>
+                </div>
+                <div class="col-3">
+                    <img class="stars" src="images/star_right.png"  alt="stars" >
+                </div>
+            </div>
+            <br/>
+            <br/>
+        </header>
+        <nav>
+            <ul>
+                <li class="highlight" onclick="home()">Начало</li>
+                <li class="highlight" onclick="redirect()">Карта</li>
+                <li class="highlight" onclick="contacts()">Контакти</li>
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p class="slogan">
+                Южна Америка
+            </p>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/andeancondor.jpg" data-lightbox="example-set"><img class="example-image" src="images/andeancondor.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Южноамерикански кондор
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Южноамериканският кондор достига до над 1 метър дължина и между 10 и 15 кг. а размахът на крилете му – до впечатляващите 310 – 330 cm.
+
+                        Характерна за тези птици е черната окраска на перата, с изключение на по едно бяло петно на двете крила и „якичката“ на врата им. При мъжките екземпляри се наблюдава наличие на месест гребен над човката. При възрастните птици той достига до 5 cm. височина.
+
+                        Продължителността на живота при южноамериканския кондор е между 50 и 70 години.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Тукан токо
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/toucan.jpg" data-lightbox="example-set"><img class="example-image" src="images/toucan.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Тукан токо (Ramphastos toco) е вид птица от семейство Туканови. Тукановите са любопитни и интелигентни. Събират се на шумни ята по върховете на дърветата на тропическите гори в Централна и Южна Америка. Те произхождат от: Аржентина, Боливия, Бразилия, Гвиана, Парагвай, Перу и Суринам. Има 37 вида Toco Tucan, вариращи от Мексико до Аржентина.                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/hoazin.jpg" data-lightbox="example-set"><img class="example-image" src="images/hoazin.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Хоацин 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Хоацинът е вид птица, единствен представител на род хоацини. Забележителна е с това, че е единствената известна оцеляла към XXI век птица, която има нокти на върха на крилата си, по което прилича на най-ранната известна на науката птица, позната като археоптерикс, като чийто родственик понякога е определяна.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Алено ара
+                    </td>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/ara.jpg" data-lightbox="example-set"><img class="example-image" src="images/ara.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Папагалите ара обитават екваториалните и тропически гори на Централна и Южна Америка. По-голямата част от видовете се срещат в басейна на Амазонка и в Гвианските блата, като много са ендемити за този район. Като цяло папагалите Ара се срещат само на континента. Изключение правят само островите Тринидад и Сейнт Винсент, като на втория живее само един вид. В миналото и на другите Антилски острови са се срещали Ари и това са трите изчезнали вида – Кубинско, Доминиканско и Карибско ара, които до началото на XX век са се срещали в Куба, Хаити, Доминиканската република и някои от Малките Антили, но са изчезнали вследствие на унищожението на горите и търговията с пера в тези страни.
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <table border ="1">
+                <tr>
+                    <td rowspan="3">
+                        <a class="example-image-link" href="images/harpy.jpg" data-lightbox="example-set"><img class="example-image" src="images/harpy.jpg" width="300"  alt="bird"/></a>
+                    </td>
+                    <td colspan="2" style="color: purple; text-align: center;">
+                        Харпия
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Южноамериканската харпия е най-голямата хищна птица, принадлежаща към семейството на ястребите. Името й идва от старогръцки и означава "отвличане", тъй като още в древни времена птицата е успяла да си спечели неласкава репутация. Индийците са били убедени, че с помощта на мощния й клюн лесно може да счупи дори човешкия череп... и вероятно не са много далече от истината.
+
+                        Дължината на тялото достига до 1 м. Размахът на крилете достига цели 2 м. Затова е величествено да се наблюдава полетът им. Любопитно е, че женските са по-едри от мъжките и обикновено тежат от 6 до 10 кг. Отличителен белег на харпията са черните пера във формата на корона, качулка или яка в задната част на глава.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="footer_center">
+                <a href="contacts.html">
+                    <div class="footer_content">
+                        <img class="contact_img" src="images/contacts.png" alt="contacts">
+                        <h4>За контакти, моля натиснете тук!</h4>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <br/><br/><br/><br/><br/><br/>
+
     </body>
 </html>
