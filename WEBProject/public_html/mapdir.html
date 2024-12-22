@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/lightbox.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="js/lightbox.js"></script>
-        
+
         <script>
             $(document).ready(function () {
                 $(".slider").bxSlider();
@@ -73,7 +73,19 @@
             <p class="slogan">
                 Пътешествайте и опознайте разнообразните и вълнуващи породи птици из света СЕГА!
             </p>
-            <img src="images/continents.png" width="1000" height="500" border="0" usemap="#map" />
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Континенти</a>
+                <div class="dropdown-content">
+                    <a href="europe.html" >Европа</a>
+                    <a href="asia.html">Азия</a>
+                    <a href="africa.html">Африка</a>
+                    <a href="northamerica.html" >Северна Америка</a>
+                    <a href="southamerica.html">Южна Америка</a>
+                    <a href="australia.html">Австралия</a>
+                    <a href="antarktida.html" >Антарктида</a>
+                </div>
+            </li>
+            <img src="images/continents.png" width="1000" height="500" border="0" usemap="#map" alt="map"/>
             <map name="map">
                 <area shape="poly" coords="30,37,15,93,131,120,180,195,258,242,285,212,296,167,356,136,403,79,478,20,188,6,101,21" href="northamerica.html" />
                 <area shape="poly" coords="262,249,300,202,303,185,423,269,341,408,272,402" href="southamerica.html" />
@@ -83,6 +95,7 @@
                 <area shape="poly" coords="802,302,874,279,901,286,949,330,999,350,995,380,861,382,797,354" href="australia.html" />
                 <area shape="poly" coords="996,419,996,496,13,498,5,426" href="antarktida.html" />
             </map>
+
         </div>
         <footer>
             <div class="footer_center">

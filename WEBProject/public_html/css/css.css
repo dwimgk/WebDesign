@@ -15,18 +15,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     font-style: normal;
 }
 
-/*background img and formatting*/
+/*background formatting*/
 body {
-    background-image: url('../images/background.jpg');
-    background-attachment: fixed;
-    background-size: 110%;
     margin: auto;
     width:80%;
-    background-color: Rgba(1,2,100,0.1);
-
 }
-/* Style the main menu */
-div.main_menu{
+/* Style the header */
+header{
     background-color: rgba(255,255,255,0.1);
     width: 100%;
     height: 100%;
@@ -37,6 +32,7 @@ div.main_menu{
     text-align: center;
     font-size: 1.5VW;
 }
+/*the crow image formatting*/
 .logo{
     width: 50%;
     height: auto;
@@ -44,10 +40,7 @@ div.main_menu{
     float:left;
     transition: 0.1s;
 }
-.logo:hover{
-    width: 50vw;
-}
-
+/*the header text of the website*/
 h1{
     padding-left: 60px;
     padding-top: 10px;
@@ -55,9 +48,11 @@ h1{
     text-align: center;
     transition: 0.1s;
 }
+/*changing the color of the header text*/
 h1:hover{
     color:darkslateblue;
 }
+/*image of star and moon*/
 .stars{
     width: 50%;
     height: auto;
@@ -65,19 +60,28 @@ h1:hover{
     padding-top: 35px;
     transition: 0.1s;
 }
+/*onhover effect*/
 .stars:hover{
     width: 10vw;
 }
+/*formatting the contact, map and homepage buttons*/
 ul {
     border-radius: 25px;
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 15px;
     overflow: hidden;
     background-color: rgba(0, 139, 139, 0.5);
+    float:left;
+}
+/*onhover effect for the buttons*/
+.highlight:hover {
+    background-color: orange;
+    transform: scale(1.1);
 }
 
-li {
+/*formatting of the Continents dropdown in mapdir.html*/
+li.highlight {
     padding:5px;
     border-radius: 25px;
     background-color: rgba(255, 165, 0, 0.6);
@@ -85,11 +89,57 @@ li {
     margin-right: 10px;
     color: black;
 }
-
-.highlight:hover {
-    background-color: orange;
-    transform: scale(1.1);
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
 }
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #333;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*end of the dropdown formatting*/
+
+/*white background behind the main content of the pages*/
 .content {
     background-color: rgba(255,255,255,0.5);
     padding: 10px;
@@ -100,19 +150,24 @@ li {
     width: 100%;
     margin-bottom: 20px;
 }
+/*formatting the slider on the index page*/
 .slider{
-    margin-left: 178px;
-    background-color: rgba(155,155,155,0.5);
     padding: 10px;
     border-radius: 50px;
     height:600px;
 }
+.bx-wrapper{
+    border:0px !important;
+    background: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+/*formatting the slider on the index page*/
+/*slogan for the index page*/
 .slogan{
-    margin-left: 100px;
     text-align:center;
     color: darkblue;
     font-size: 1.5VW;
-    width: 80%;
 }
 /* CONTACTS FORM */
 input[type=text], select, textarea {
@@ -184,7 +239,7 @@ footer {
     gap: 10px;
     text-align: center;
 }
-
+/*the footer img*/
 .contact_img {
     max-width: 40px;
     height: auto;
@@ -202,6 +257,8 @@ h4 {
     /*padding: 15px;
     border: 1px solid red;*/
 }
+
+/*box formatting*/
 .col-1 {
     width: 8.33%;
 }
@@ -237,4 +294,80 @@ h4 {
 }
 .col-12 {
     width: 100%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        background-image: url('../images/leastbackground.jpg');
+        background-attachment: fixed;
+        background-size: 110%;
+        [class*="col-"] {
+            float: none;
+            width:100%;
+        }
+        .logo{
+            margin-left: 30%;
+        }
+        .stars{
+            visibility: hidden;
+        }
+        
+        .slogan{
+            font-size: 20px;
+        }
+        img[alt=map]{
+            display: none;
+        }
+        .map{
+            display: none;
+        }
+        img[alt=bird]{
+            display: none;
+        }
+        h1{
+            font-size:20px;
+        }
+        ul{
+            padding-bottom:  50px;
+        }
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    body{
+        background-image: url('../images/lesserbackground.jpg');
+        background-attachment: fixed;
+        background-size: 110%;
+    }
+    img[alt=map]{
+        display: none;
+    }
+    .map{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    body * {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 768px){
+    body{
+        background-image: url('../images/background.jpg');
+        background-attachment: fixed;
+        background-size: 110%;
+    }
+    .slider{
+        width: 700px;
+        height: auto;
+        margin-left: 50px;
+    }
 }
