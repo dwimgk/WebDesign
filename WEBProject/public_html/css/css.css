@@ -344,6 +344,9 @@ h4 {
             background-color: rgba(255,255,255,0.1);
             min-height: 200px;
         }
+        footer{
+            background-color: rgba(155,155,155,0.8);
+        }
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 700px){
@@ -374,14 +377,22 @@ h4 {
         margin-left: 30%;
     }
     header{
-            background-color: rgba(0,0,0,0.1);
-            min-height: 200px;
-        }
+        background-color: rgba(0,0,0,0.1);
+        min-height: 200px;
+    }
 }
 @media only screen and (max-width: 700px){
     body * {
         text-align: center;
         margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1080px){
+    img[alt=map]{
+        display: none;
+    }
+    .map{
+        display: none;
     }
 }
 @media only screen and (min-width: 700px){
