@@ -40,6 +40,7 @@ header{
     float:left;
     transition: 0.1s;
 }
+
 /*the header text of the website*/
 h1{
     padding-left: 60px;
@@ -319,7 +320,7 @@ h4 {
         .stars{
             visibility: hidden;
         }
-        
+
         .slogan{
             font-size: 20px;
         }
@@ -334,13 +335,18 @@ h4 {
         }
         h1{
             font-size:20px;
+            color: white;
         }
         ul{
             padding-bottom:  50px;
         }
+        header{
+            background-color: rgba(255,255,255,0.1);
+            min-height: 200px;
+        }
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 768px){
+@media only screen and (min-width: 480px) and (max-width: 700px){
     body{
         background-image: url('../images/lesserbackground.jpg');
         background-attachment: fixed;
@@ -352,14 +358,33 @@ h4 {
     .map{
         display: none;
     }
+    .stars{
+        visibility: hidden;
+    }
+    h1{
+        font-size:20px;
+        color: black;
+        text-align: center;
+    }
+    [class*="col-"] {
+        float: none;
+        width:100%;
+    }
+    .logo{
+        margin-left: 30%;
+    }
+    header{
+            background-color: rgba(0,0,0,0.1);
+            min-height: 200px;
+        }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 700px){
     body * {
         text-align: center;
         margin: 0 auto;
     }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 700px){
     body{
         background-image: url('../images/background.jpg');
         background-attachment: fixed;
